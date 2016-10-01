@@ -1,0 +1,55 @@
+
+<div class="panel panel-default">
+<div class="panel-body">
+<form class="create-form" role="form" ng-submit="categoriesCreateCtrl.createCategory(category)" form-validation novalidate>
+     
+    <div class="form-group">
+        <label for="categoryTitle">Category Title<span class="required">*</span></label>
+        <input type="text" class="form-control" ng-model="categoriesCreateCtrl.category.title" required="" placeholder="Enter title">
+    </div>
+    <div class="form-group">
+        <label for="categoryURL">Category Description<span class="required">*</span></label>
+        <input type="text" class="form-control" ng-model="categoriesCreateCtrl.category.description" required="" placeholder="Enter description">
+    </div>
+    <button type="submit" class="btn btn-info btn-lg">Submit</button>
+    <button type="button" class="btn btn-default btn-lg pull-right" ng-click="categoriesCreateCtrl.cancel()">Cancel</button>
+</form>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-body">
+<h3>AngularJs Bootstrap Modals</h3>
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <ul>
+                <li ng-repeat="item in categoriesCreateCtrl.items">
+                    <a href="#" ng-click="$event.preventDefault(); categoriesCreateCtrl.selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ categoriesCreateCtrl.selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="categoriesCreateCtrl.ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="categoriesCreateCtrl.cancel()">Cancel</button>
+        </div>
+    </script>
+
+    <!-- <button type="button" class="btn btn-default" ng-click="categoriesCreateCtrl.open()">Open me!</button> -->
+    <button type="button" class="btn btn-default" ng-click="categoriesCreateCtrl.open('lg')">Large modal</button>
+    <!-- <button type="button" class="btn btn-default" ng-click="categoriesCreateCtrl.open('sm')">Small modal</button>
+    <button type="button" class="btn btn-default" ng-click="categoriesCreateCtrl.toggleAnimation()">Toggle Animation ({{ categoriesCreateCtrl.animationsEnabled }})</button>
+    <button type="button" class="btn btn-default" ng-click="categoriesCreateCtrl.openComponentModal()">Open a component modal!</button>
+    <div ng-show="categoriesCreateCtrl.selected">Selection from a modal: {{ categoriesCreateCtrl.selected }}</div> -->    
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-body">
+<h3>BEE PLUGIN</h3>
+<script src="https://app-rsrc.getbee.io/plugin/BeePlugin.js" type="text/javascript"></script>
+</div>
+</div>

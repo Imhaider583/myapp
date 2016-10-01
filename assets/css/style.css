@@ -1,0 +1,31 @@
+header {
+    background: gray none repeat scroll 0 0;
+    height: 100px;
+}
+sidbar {
+    background: lightgray none repeat scroll 0 0;
+    height: 400px;
+}
+footer {
+    background: gray none repeat scroll 0 0;
+    clear: both;
+    height: 30px;
+}
+sidbar a {
+    display: block;
+    margin-top: 10px;
+}
+header a,
+header a:active,
+header a:focus,
+header a:hover {
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    margin-left: 20px;
+    padding-top: 20px;
+    width: 93px;
+}
+.detail{
+    padding: 20px;
+}

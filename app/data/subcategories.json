@@ -1,0 +1,6 @@
+[
+    {"id": 5, "parent_id":1, "parent_category":"Living Room", "title": "Sofa", "description":"Sofa Description"},
+    {"id": 6, "parent_id":2, "parent_category":"Bed Room", "title": "Bed", "description":"Bed Description"},
+    {"id": 7, "parent_id":3, "parent_category":"Dining Room", "title": "Dining Tables", "description":"Dining Tables Description"},
+    {"id": 8, "parent_id":4, "parent_category":"Entertainment", "title": "TV Console", "description":"TV Console Description"}
+]
